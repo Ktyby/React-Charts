@@ -1,0 +1,23 @@
+files:
+  - package.json
+plugins:
+  prerelease:
+
+    Linting config files:
+      plugin: bumped-finepack
+
+    Checking for the current branch's name, it must be release/v*:
+      plugin: bumped-terminal
+      command: 'currentBranch=$(git rev-parse --abbrev-ref HEAD);
+                [[ $currentBranch == *"release/v"* ]] || exit 1'
+
+  postrelease:
+
+    Committing new version:
+      plugin: bumped-terminal
+      command: 'git add CHANGELOG.md package.json && git commit -m "Release v$newVersion"'
+
+    Publishing tag to GitLab:
+      plugin: bumped-terminal
+      command: 'currentBranch=$(git rev-parse --abbrev-ref HEAD);
+                git tag v$newVersion && git push --tags origin $currentBranch'
