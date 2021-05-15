@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 
+import LeftAxis from './LeftAxis';
 import BottomAxis from './BottomAxis';
 import Bars from './Bars';
 
@@ -11,8 +12,11 @@ const BarChart = ({ chartsData }) => {
 
 	return (
 		<div className="chart__container" ref={currentElement}>
-			<Bars bars={chartsData.map(({ y }) => y)} parentElement={currentElement} />
-			<BottomAxis domain={chartsData.map(({ x }) => x)} />
+			<LeftAxis />
+			<div className="chart__right-contert">
+				<Bars bars={chartsData.map(({ y }) => y)} parentElement={currentElement} />
+				<BottomAxis domain={chartsData.map(({ x }) => x)} />
+			</div>
 		</div>
 	);
 };
