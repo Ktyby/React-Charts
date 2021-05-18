@@ -7,10 +7,10 @@ const chartsData = [
 	{ x: 'Germany', y: 91 },
 	{ x: 'USA', y: 80 },
 	{ x: 'Russia', y: 51 },
-	{ x: 'England', y: 96 },
+	{ x: 'England', y: -36 },
 	{ x: 'Poland', y: 54 },
 	{ x: 'Belarus', y: 44 },
-	{ x: 'Hungary', y: 84 },
+	{ x: 'Hungary', y: -74 },
 	{ x: 'Cuba', y: 23 },
 ];
 

@@ -6,7 +6,7 @@ import './style.css';
 const BottomAxis = memo(({ domain }) => (
 	<div className="chart__bottom-axis">
 		{domain.map((element, index) => (
-			<div className="chart__interval" key={index}>
+			<div className="chart__domain" key={index}>
 				{element}
 			</div>
 		))}
