@@ -4,13 +4,13 @@ import BarChart from '../BarChart';
 import './style.css';
 
 const chartsData = [
-	{ x: 'Germany', y: 91 },
-	{ x: 'USA', y: 80 },
-	{ x: 'Russia', y: 51 },
-	{ x: 'England', y: -36 },
-	{ x: 'Poland', y: 54 },
-	{ x: 'Belarus', y: 44 },
-	{ x: 'Hungary', y: -74 },
+	{ x: 'Germany', y: 32 },
+	{ x: 'USA', y: 51 },
+	{ x: 'Russia', y: 21 },
+	{ x: 'England', y: -16 },
+	{ x: 'Poland', y: 42 },
+	{ x: 'Belarus', y: 15 },
+	{ x: 'Hungary', y: -22 },
 	{ x: 'Cuba', y: 23 },
 ];
 
