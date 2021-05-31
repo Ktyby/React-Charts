@@ -5,12 +5,12 @@ import './style.css';
 
 const chartsData = [
 	{ x: 'Germany', y: 32 },
-	{ x: 'USA', y: 51 },
+	{ x: 'USA', y: 100 },
 	{ x: 'Russia', y: 21 },
-	{ x: 'England', y: -16 },
+	{ x: 'England', y: 16 },
 	{ x: 'Poland', y: 42 },
 	{ x: 'Belarus', y: 15 },
-	{ x: 'Hungary', y: -22 },
+	{ x: 'Hungary', y: -32 },
 	{ x: 'Cuba', y: 23 },
 ];
 

@@ -12,7 +12,7 @@ const BarChart = ({ chartsData }) => {
 
 	return (
 		<div className="chart__container" ref={currentElement}>
-			<LeftAxis />
+			<LeftAxis parentElement={currentElement} />
 			<div className="chart__content">
 				<Bars bars={chartsData.map(({ y }) => y)} parentElement={currentElement} />
 				<BottomAxis domain={chartsData.map(({ x }) => x)} />

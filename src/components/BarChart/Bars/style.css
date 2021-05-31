@@ -9,7 +9,15 @@
 	position: relative;
 }
 
-.charts__bar {
+.chart__zero-axis {
+	border-bottom: 2px solid #000;
+
+	width: 100%;
+
+	z-index: 1000;
+}
+
+.chart__bar {
 	position: absolute;
 	content: '';
 	bottom: 0;
@@ -17,7 +25,7 @@
 	background-color: cadetblue;
 }
 
-.charts__bar--negative {
+.chart__bar--negative {
 	display: flex;
 	align-self: flex-start;
 }

@@ -11,10 +11,11 @@ const Bars = memo(({ bars, parentElement }) => {
 	return (
 		<div className="chart__bars">
 			{bars.map((element, index) => (
-				<div className="charts__bar" key={index} value={element}>
+				<div className="chart__bar" key={index} value={element}>
 					{element}
 				</div>
 			))}
+			<div className="chart__zero-axis"></div>
 		</div>
 	);
 });
