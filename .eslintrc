@@ -15,7 +15,8 @@
 		"no-underscore-dangle": "off",
 		"import/no-cycle": "off",
 		"react/display-name": "off",
-		"no-param-reassign": "off"
+		"no-param-reassign": "off",
+		"react/no-unescaped-entities": "off"
 	},
 	"parserOptions": {
 		"ecmaVersion": 6,

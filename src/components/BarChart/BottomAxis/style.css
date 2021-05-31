@@ -3,16 +3,16 @@
 	width: 100%;
 
 	border-top: 2px solid #000;
+
+	z-index: 1000;
 }
 
-.chart__interval {
+.chart__domain {
 	width: 100%;
 
 	border-right: 2px solid #000;
 
 	text-align: center;
-}
 
-.chart__interval:first-child {
-	border-left: 2px solid #000;
+	position: relative;
 }

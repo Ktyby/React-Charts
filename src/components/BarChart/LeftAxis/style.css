@@ -1,5 +1,43 @@
 .chart__left-axis {
+	display: flex;
+	align-self: flex-end;
 	height: 100%;
 
 	border-right: 2px solid #000;
+
+	position: relative;
+}
+
+.chart__values {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column-reverse;
+	align-items: flex-end;
+
+	position: absolute;
+	left: -30px;
+	top: -8px;
+
+	z-index: 100;
+}
+
+.chart__values--negative {
+	flex-direction: column;
+
+	bottom: 0;
+	left: -22.5px;
+}
+
+.chart__value {
+	position: relative;
+}
+
+.chart__value::after {
+	width: 10px;
+	position: absolute;
+	content: '';
+	right: -12px;
+	top: 7.5px;
+
+	border-bottom: 2px solid #000;
 }

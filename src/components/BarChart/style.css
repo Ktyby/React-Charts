@@ -5,6 +5,12 @@
 	height: 100%;
 }
 
-.chart__right-contert {
+.chart__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	width: 100%;
+
+	margin: 0 auto;
 }

@@ -1,16 +1,31 @@
 .chart__bars {
 	display: flex;
 
+	box-sizing: border-box;
+
 	width: 100%;
 	height: 100%;
+
+	position: relative;
 }
 
-.charts__bar {
-	display: flex;
-	align-self: flex-end;
+.chart__zero-axis {
+	border-bottom: 2px solid #000;
 
 	width: 100%;
-	margin-left: 2px;
+
+	z-index: 1000;
+}
+
+.chart__bar {
+	position: absolute;
+	content: '';
+	bottom: 0;
 
 	background-color: cadetblue;
+}
+
+.chart__bar--negative {
+	display: flex;
+	align-self: flex-start;
 }
